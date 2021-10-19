@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
 import nookies from 'nookies'
-import NowPlayingCard from '../components/NowPlaying'
+import NowPlayingCard from '../components/NowPlayingCard'
 import ApiClient from '../lib/ApiClient'
 import { useState, useEffect } from 'react'
 import Gap from '../components/Gap'
@@ -36,9 +36,6 @@ export default function Playing({ authToken, authEmail }) {
             </Head>
             <Gap size="30px" />
             <div className="flex flex-wrap justify-center container mx-auto">
-                <div className="w-full px-4 pb-4">
-                    <NowPlayingCard data={nowPlaying} />
-                </div>
                 <div className="w-full px-4 pb-4">
                     <NowPlayingCard data={nowPlaying} />
                 </div>
