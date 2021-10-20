@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Layout from '../components/layout'
 import AnonymousApiClient from '../lib/AnonymousApiClient'
 import nookies from 'nookies'
 import Gap from '../components/Gap'
@@ -65,7 +65,7 @@ export default function Home({ authUrl }) {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Songstats</title>
       </Head>
       <div className="container mx-auto flex flex-wrap">
         <div className="w-full px-4 pb-4 text-center">

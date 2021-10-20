@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { destroyCookie } from 'nookies'
 
-export const siteTitle = 'Next.js Sample Website'
-
 function logoutUser() {
     destroyCookie(null, 'authToken')
     destroyCookie(null, 'authEmail')
