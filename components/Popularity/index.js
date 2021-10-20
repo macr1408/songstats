@@ -8,7 +8,7 @@ export default function Popularity({ popularity, className }) {
                 <div className={`w-2 h-5 bg-gray-300 mr-1 ${popularity > 70 ? 'bg-green-400' : ''}`}></div>
                 <div className={`w-2 h-6 bg-gray-300 mr-1 ${popularity > 80 ? 'bg-green-300' : ''}`}></div>
             </div>
-            <p className="text-sm text-gray-200">Popularity</p>
+            <p className="text-sm text-gray-200 text-shadow">Popularity</p>
         </div>
     )
 }

@@ -19,8 +19,14 @@ export async function getServerSideProps(context) {
   }
 
   // User not logged in, prepare everything for auth
+  const isDevEnv = (process && process.env.NODE_ENV === "development");
   const client = new AnonymousApiClient()
-  const redirectUrl = 'http://localhost:3000'
+  let redirectUrl = ''
+  if (isDevEnv) {
+    redirectUrl = 'http://localhost:3000'
+  } else {
+    redirectUrl = 'https://songstats.site.macr1408.xyz'
+  }
 
   // First time visiting index, return plain home
   if (!context.query.code) {
