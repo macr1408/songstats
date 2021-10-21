@@ -1,5 +1,5 @@
 export default function Card(props) {
-    const { background, minHeight } = props
+    const { minHeight } = props
     return (
         <div
             className={`bg-gray-main shadow-lg rounded-xl p-4 overflow-hidden relative flex`}

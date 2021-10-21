@@ -31,8 +31,10 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 16px;
-  background-color: $main-black;
+  background: rgb(22,62,36);
+  background: linear-gradient(0deg, rgb(16, 46, 27) 0%, rgba(18,18,18,1) 20%, rgba(18,18,18,1) 100%);
   color: #fff;
+  min-height: 100vh;
 }
 
 * {

@@ -75,7 +75,10 @@ export default function Home({ authUrl }) {
       </Head>
       <div className="container mx-auto flex flex-wrap">
         <div className="w-full px-4 pb-4 text-center">
-          <Gap size="400px" />
+          <Gap size="200px" />
+          <h1 className="text-2xl md:text-4xl mb-4">Get stats of your currently listening song on Spotify</h1>
+          <h2 className="text-lg md:text-2xl">Check the popularity, facts, lyrics and more!</h2>
+          <Gap size="60px" />
           <a href={authUrl.url ? authUrl.url : ''} className="bg-green-500 px-10 py-2 rounded-full text-2xl">Connect</a>
           {authUrl.error &&
             <p className="mt-4 italic max-w-xs md:max-w-sm mx-auto">{authUrl.error}</p>
